@@ -1045,7 +1045,7 @@ var tt;function toast(m){var t=$("toast");t.textContent=m;t.hidden=false;clearTi
 document.addEventListener("click",function(e){if(e.target.closest("#copyLink")){var u=location.href;try{navigator.clipboard.writeText(u).then(function(){toast("Link copied")},function(){toast("Copy this link: "+u)})}catch(err){toast("Copy this link: "+u)}}});
 
 /* router */
-var TITLES={home:"SONYX Gaming",watch:"Watch · SONYX",story:"GTA 6 Story · SONYX",hub:"Gaming Hub · SONYX",store:"Store · SONYX",about:"About · SONYX",links:"Links · SONYX"};
+var TITLES={home:"SONYX by Soniya · GTA 6 Live from Nepal (PS5 Streams & Shorts)",watch:"Watch · SONYX",story:"GTA 6 Story · SONYX",hub:"Gaming Hub · SONYX",store:"Store · SONYX",about:"About · SONYX",links:"Links · SONYX"};
 function route(){var h=(location.hash||"#home").slice(1),view=h;
  if(h.indexOf("post-")===0){view=renderPost(h.slice(5))?"post":"hub"}
  if(!document.querySelector('[data-view="'+view+'"]'))view="home";
